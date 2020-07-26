@@ -35,7 +35,7 @@ export function App() {
     }, []);
 
     return (
-        <Router>
+        <Router withInitializeCommands>
             <Route path="/flat_dialog" description="Build a simple dialog">
                 <FlatDialogExample />
             </Route>
@@ -96,11 +96,6 @@ export function App() {
             <Route path="/router" description="Basic Router usage">
                 <RouterExample />
             </Route>
-            <Route path="/notification" description="Send messages one time every seconds">
-                <Notification intervalSeconds={2}>
-                    <Text>Ping every two second</Text>
-                </Notification>
-            </Route>
             <Route path="/start" description="Navigation">
                 <Text isNewMessageEveryRender>
                     Hi! It's an example of <i>Urban Bot</i> base components and hooks. Please choose a command.
@@ -143,8 +138,6 @@ export function App() {
                     /location
                     <br />
                     /router
-                    <br />
-                    /notification
                 </Text>
             </Route>
         </Router>
