@@ -26,7 +26,7 @@ dotenv.config();
 
 export function App() {
     return (
-        <Router withInitializeCommands>
+        <Router>
             <Route path="/flat_dialog" description="Build a simple dialog">
                 <FlatDialogExample />
             </Route>
