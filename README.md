@@ -3,6 +3,8 @@
 
 Base usage of components and hooks.
 
+Telegram live example - https://t.me/BaseExampleUrbanBot.
+
 ### Telegram
  1. Get telegram [token](https://core.telegram.org/bots#6-botfather)
  2. Paste token to `.env` `TELEGRAM_TOKEN=YOUR_TOKEN`
