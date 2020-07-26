@@ -1,10 +1,11 @@
-// import fs from 'fs';
-// import path from 'path';
+import fs from 'fs';
 import React from 'react';
 import { Media } from '@urban-bot/core';
+import filepath1 from '../assets/logo_1.jpg'
+import filepath2 from '../assets/logo_2.jpg'
 
-// const imageByFile = fs.readFileSync(path.join(__dirname, 'an-24.jpg'));
-// const videoByFile = fs.readFileSync(path.join(__dirname, 'video1.mp4'));
+const file1 = fs.readFileSync(filepath1);
+const file2 = fs.readFileSync(filepath2);
 
 export function MediaExample() {
     return (
@@ -12,14 +13,14 @@ export function MediaExample() {
             files={[
                 {
                     type: 'image',
-                    file:
-                        'https://upload.wikimedia.org/wikipedia/commons/3/32/Aeroflot_Tu-154B-2_CCCP-85396_ZRH_1982-6-20.png',
-                    title: 'image1',
+                    file:file1,
+                    title: 'Logo 1',
                 },
-                // {
-                //     type: 'image',
-                //     file: imageByFile,
-                // },
+                {
+                    type: 'image',
+                    file: file2,
+                    title: 'Logo 2',
+                },
                 // {
                 //     type: 'video',
                 //     file: videoByFile,

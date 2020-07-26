@@ -78,7 +78,7 @@ export function App() {
             <Route path="/animation" description="Animation example">
                 <AnimationExample />
             </Route>
-            <Route path="/media" description="Media example">
+            <Route path="/media" description="Several images or video example">
                 <MediaExample />
             </Route>
             <Route path="/location" description="Location example">
