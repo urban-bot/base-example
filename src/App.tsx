@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
-import React from 'react';
-import { Route, Router, Notification, Text } from '@urban-bot/core';
+import React, { useEffect } from 'react';
+import { Route, Router, Notification, Text, useBotContext } from '@urban-bot/core';
 import { TextExample } from './components/Text';
 import { Hooks } from './components/Hooks';
 import { ImageExample } from './components/Image';
@@ -25,6 +25,15 @@ import { FlatDialogExample, TreeDialogExample } from './components/Dialog';
 dotenv.config();
 
 export function App() {
+    const { chat } = useBotContext();
+
+    useEffect(() => {
+        if (chat !== undefined) {
+            console.log('USER ID:', chat.id);
+            console.log('USER NAME:', chat.username);
+        }
+    }, []);
+
     return (
         <Router>
             <Route path="/flat_dialog" description="Build a simple dialog">
