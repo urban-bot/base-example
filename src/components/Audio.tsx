@@ -1,10 +1,10 @@
-// import fs from 'fs';
-// import path from 'path';
+import fs from 'fs';
 import React from 'react';
 import { Audio } from '@urban-bot/core';
+import filepath from '../assets/audio.m4a';
 
-// const audioByFile = fs.readFileSync(path.join(__dirname, 'audio.mp3'));
+const file = fs.readFileSync(filepath);
 
 export function AudioExample() {
-    return <Audio file={'urlToFile' /* || audioByFile */} title="There is the song" name="Some name" />;
+    return <Audio file={file} title="There is the audio" name="Some name" />;
 }
