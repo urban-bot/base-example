@@ -1,22 +1,10 @@
 import fs from 'fs';
-import path from 'path';
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Animation } from '@urban-bot/core';
+import filepath from '../assets/animation.gif';
 
-function readFile(fileName: string) {
-    try {
-        return fs.createReadStream(path.join(__dirname, fileName));
-    } catch (error) {
-        return undefined;
-    }
-}
+const file = fs.createReadStream(filepath);
 
 export function AnimationExample() {
-    const animationByFile = useMemo(() => readFile('roboHare.gif'), []);
-
-    if (!animationByFile) {
-        return null;
-    }
-
-    return <Animation file={animationByFile} title="There is the animation" name="File Name" />;
+    return <Animation file={file} title="There is the animation" name="File Name" />;
 }

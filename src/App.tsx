@@ -54,7 +54,7 @@ export function App() {
             <Route path="/queue" description="Managed message queue">
                 <Queue />
             </Route>
-            <Route path="/hooks" description="User event">
+            <Route path="/hooks" description="User events">
                 <Hooks />
             </Route>
             <Route path="/audio" description="Audio example">
