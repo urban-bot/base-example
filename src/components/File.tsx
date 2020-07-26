@@ -1,10 +1,10 @@
-// import fs from 'fs';
-// import path from 'path';
+import fs from 'fs';
 import React from 'react';
 import { File } from '@urban-bot/core';
+import filepath from '../assets/README.md';
 
-// const file = fs.createReadStream(path.join(__dirname, 'file.doc'));
+const file = fs.createReadStream(filepath);
 
 export function FileExample() {
-    return <File file={'urlToFile' /* || file */} title="There is the file" />;
+    return <File file={file} title="There is the file" />;
 }
