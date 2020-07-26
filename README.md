@@ -1,12 +1,7 @@
-![](https://i.ibb.co/QfQ1SwT/ts.png)
+![](src/assets/logo.png)
 # Urban Bot Base Example
 
 Base usage of components and hooks.
-
-## Launch
-```shell
-npx create-urban-bot my-app
-```
 
 ### Telegram
  1. Get telegram [token](https://core.telegram.org/bots#6-botfather)
