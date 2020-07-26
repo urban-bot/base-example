@@ -1,10 +1,10 @@
-// import fs from 'fs';
-// import path from 'path';
+import fs from 'fs';
 import React from 'react';
 import { Video } from '@urban-bot/core';
+import filepath from '../assets/video.mp4'
 
-// const videoByFile = fs.readFileSync(path.join(__dirname, 'video.mp4'));
+const file = fs.createReadStream(filepath);
 
 export function VideoExample() {
-    return <Video file={'link-to-file' /* || videoByFile */} title="There is the video" />;
+    return <Video file={file} title="There is the video" />;
 }
