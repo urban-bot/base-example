@@ -94,7 +94,7 @@ export function App() {
             </Route>
             <Route path="/start" description="Navigation">
                 <Text isNewMessageEveryRender>
-                    {"Hi! It's an example of how base components and hooks work. Please choose a command."}
+                    Hi! It's an example of <i>Urban Bot</i> base components and hooks. Please choose a command.
                     <br />
                     <br />
                     /text
@@ -111,9 +111,9 @@ export function App() {
                     <br />
                     /hooks
                     <br />
-                    /tree_dialog
-                    <br />
                     /flat_dialog
+                    <br />
+                    /tree_dialog
                     <br />
                     /queue
                     <br />

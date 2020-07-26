@@ -45,10 +45,6 @@ export function MatrixButtonsMaxColumnsExample() {
             <Button>Third button</Button>
             <Button>Fourth button</Button>
             <Button>Fifth button</Button>
-            <Button>Sixth button</Button>
-            <Button>Seventh button</Button>
-            <Button>Eighth button</Button>
-            <Button>Ninth button</Button>
         </ButtonGroup>
     );
 }
